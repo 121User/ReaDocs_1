@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">ReaDocs</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">ReaDocs</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_allDocuments">Все документы</string>
+    <string name="menu_readNow">Читаю</string>
+    <string name="menu_favourites">Избранное</string>
+    <string name="menu_deferred">Отложено</string>
+    <string name="menu_read">Прочитано</string>
+    <string name="menu_collections">Коллекции</string>
+    <string name="menu_help_information">Помощь</string>
+
+    <string name="docs_from_collection">Документы из коллекции</string>
+    <string name="info_no_documents">Нет документов</string>
+    <string name="info_no_collections">Нет коллекций</string>
+
+    <string name="permit">Разрешить</string>
+    <string name="reject">Отклонить</string>
+
+    <string name="rename">Переименовать</string>
+    <string name="delete">Удалить</string>
+
+    <string name="save">Сохранить</string>
+    <string name="cancel">Отмена</string>
+
+    <string name="create_collection">Создать коллекцию</string>
+    <string name="create">Создать</string>
+
+    <string name="confirmation_delete_document">Удалить выбранный документ?</string>
+    <string name="confirmation_delete_collection">Удалить выбранную коллекцию?</string>
+
+    <string name="permission_text">
+        Для работы приложения необходимо дать разрешение на доступ к файлам. Без разрешения приложение не сможет работать.
+    </string>
+
+    <string name="search_hint">Введите название документа</string>
+    <string name="dropdown_area_filter">Фильтр:</string>
+    <string name="dropdown_area_filter_txt">TXT</string>
+    <string name="dropdown_area_filter_pdf">PDF</string>
+    <string name="dropdown_area_filter_doc_or_docx">DOC</string>
+
+
+    <string name="help_documents">Документы</string>
+    <string name="help_documents_information">
+        \tДля чтения документа необходимо нажать на выбранный документ.\n\n
+        Для того, чтобы вернуться к начальному размеру документа, нужно сделать долгое нажатие по области текста.\n\n
+        Для открытия окна редактирования свойств документа необходимо сделать долгое нажатие по нужному документу.\n
+        В этом окне можно добавить документ в коллекцию, переименовать и удалить.\n\n
+        Чтобы добавить документ в пользовательскую коллекцию, в этом окне нужно нажать на кнопку \"Коллекции\" и выбрать коллекции для добавления.
+    </string>
+    <string name="help_collections">Коллекции</string>
+    <string name="help_collections_information">
+        \tВ приложении предусмотрены коллекции по умолчанию: \"Избранное\", \"Читаю\", \"Отложено\", \"Прочитано\". Список всех документов можно посмотреть на странице \"Все документы\".\n\n
+        При просмотре списка документов любой коллекции можно воспользоваться поиском и фильтром. Они расположены в верхней части окна приложения.\n\n
+        Создать свою коллекцию можно на странице \"Коллекции\".\n\n
+        Также на этой странице можно открыть нужную коллекцию для просмотра списка документов в ней и открыть окно редактирования коллекции.\n\n
+        Для открытия окна редактирования коллекции необходимо сделать долгое касание по нужной коллекции.\n
+        В этом окне можно переименовать и удалить коллекцию.
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:theme="@style/Theme.AppCompat.Dialog"
+    tools:context=".ui.dialog.EditDocumentDialog">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/activity_vertical_margin">
+
+                <Button
+                    android:id="@+id/btnFavourite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="25dp"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:paddingStart="70dp"
+                    android:paddingEnd="70dp"
+                    android:drawableStart="@drawable/ic_menu_favourites"
+                    android:text="@string/menu_favourites"
+                    android:textColor="@color/white"
+                    android:background="@null"
+                    android:drawableTint="@color/white"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
+
+                <Button
+                    android:id="@+id/btnReadNow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:drawableTop="@drawable/ic_menu_read_now"
+                    android:text="@string/menu_readNow"
+                    android:textColor="@color/white"
+                    android:background="@null"
+                    android:drawableTint="@color/white"
+                    android:onClick="onClickChangeReadStatus"
+                    />
+
+                <Button
+                    android:id="@+id/btnDeferred"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:drawableTop="@drawable/ic_menu_deferred"
+                    android:text="@string/menu_deferred"
+                    android:textColor="@color/white"
+                    android:background="@null"
+                    android:drawableTint="@color/white"
+                    android:onClick="onClickChangeReadStatus"
+                    />
+
+                <Button
+                    android:id="@+id/btnRead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:drawableTop="@drawable/ic_menu_read"
+                    android:text="@string/menu_read"
+                    android:textColor="@color/white"
+                    android:background="@null"
+                    android:drawableTint="@color/white"
+                    android:onClick="onClickChangeReadStatus"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnCollections"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="25dp"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingStart="70dp"
+                android:paddingEnd="70dp"
+                android:drawableStart="@drawable/ic_menu_collections"
+                android:text="@string/menu_collections"
+                android:textColor="@color/white"
+                android:background="@null"
+                android:drawableTint="@color/white"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="25dp">
+
+                <Button
+                    android:id="@+id/btnRename"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_menu_rename"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:paddingStart="70dp"
+                    android:paddingEnd="70dp"
+                    android:text="@string/rename"
+                    android:textColor="@color/white"
+                    android:background="@null"
+                    android:drawableTint="@color/white"
+                    />
+
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:paddingStart="70dp"
+                    android:paddingEnd="70dp"
+                    android:drawableStart="@drawable/ic_menu_delete"
+                    android:text="@string/delete"
+                    android:textColor="@color/red"
+                    android:background="@null"
+                    android:drawableTint="@color/red"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

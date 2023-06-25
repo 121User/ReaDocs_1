@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_900">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDocs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/help_documents"
+                android:textColor="@color/text_color_1"
+                android:textSize="24sp"
+                />
+            <TextView
+                android:id="@+id/tvDocsInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/help_documents_information"
+                android:textColor="@color/text_color_1"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/tvColls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/help_collections"
+                android:textColor="@color/text_color_1"
+                android:textSize="24sp"
+                />
+            <TextView
+                android:id="@+id/tvCollsInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/help_collections_information"
+                android:textColor="@color/text_color_1"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

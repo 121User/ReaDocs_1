@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_allDocuments">
+
+    <fragment
+        android:id="@+id/nav_allDocuments"
+        android:name="com.example.readocs_1.ui.AllDocumentsFragment"
+        android:label="@string/menu_allDocuments"
+        tools:layout="@layout/fragment_all_documents" />
+
+    <fragment
+        android:id="@+id/nav_readNow"
+        android:name="com.example.readocs_1.ui.ReadNowFragment"
+        android:label="@string/menu_readNow"
+        tools:layout="@layout/fragment_read_now" />
+
+    <fragment
+        android:id="@+id/nav_favourites"
+        android:name="com.example.readocs_1.ui.FavouritesFragment"
+        android:label="@string/menu_favourites"
+        tools:layout="@layout/fragment_favourites" />
+
+    <fragment
+        android:id="@+id/nav_deferred"
+        android:name="com.example.readocs_1.ui.DeferredFragment"
+        android:label="@string/menu_deferred"
+        tools:layout="@layout/fragment_deferred" />
+
+    <fragment
+        android:id="@+id/nav_read"
+        android:name="com.example.readocs_1.ui.ReadFragment"
+        android:label="@string/menu_read"
+        tools:layout="@layout/fragment_read" />
+
+    <fragment
+        android:id="@+id/nav_collections"
+        android:name="com.example.readocs_1.ui.CollectionsFragment"
+        android:label="@string/menu_collections"
+        tools:layout="@layout/fragment_collections" />
+
+    <fragment
+        android:id="@+id/nav_help_information"
+        android:name="com.example.readocs_1.ui.HelpInformationFragment"
+        android:label="@string/menu_help_information"
+        tools:layout="@layout/fragment_help_information" />
+
+</navigation>

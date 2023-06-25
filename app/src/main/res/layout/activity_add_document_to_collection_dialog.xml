@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:theme="@style/Theme.AppCompat.Dialog"
+    tools:context=".ui.dialog.AddDocumentToCollectionDialog">
+
+    <ListView
+        android:id="@+id/lvCollections"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/fragment_buffer_margin"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        />
+
+</LinearLayout>

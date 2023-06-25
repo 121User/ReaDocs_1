@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AllDocumentsFragment"
+    android:background="@color/purple_900"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/dropdownArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvQuantityDocuments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/info_no_documents"
+            android:textColor="@color/text_color_1"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnFilterTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:text="@string/dropdown_area_filter_txt"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/purple_1000"
+                />
+            <Button
+                android:id="@+id/btnFilterPdf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:text="@string/dropdown_area_filter_pdf"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/purple_1000"
+                />
+            <Button
+                android:id="@+id/btnFilterDocOrDocx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:text="@string/dropdown_area_filter_doc_or_docx"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/purple_1000"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ibDropdownShowOrHide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/purple_1000"
+        android:src="@drawable/ic_dropdown_area_show"
+        app:tint="@color/text_color_1"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+        />
+
+    <ListView
+        android:id="@+id/lvDocuments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/fragment_buffer_margin"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        />
+
+    <TextView
+        android:id="@+id/tvNoDocuments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/info_no_documents"
+        android:textColor="@color/text_color_1"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+</LinearLayout>
