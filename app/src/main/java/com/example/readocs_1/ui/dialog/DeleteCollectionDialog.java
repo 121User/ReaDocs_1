@@ -14,7 +14,7 @@ public class DeleteCollectionDialog extends DatabaseUtilsActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_delete_document_dialog);
+        setContentView(R.layout.activity_delete_collection_dialog);
 
         //Изменение размера диалогового окна
         WindowManager.LayoutParams params = getWindow().getAttributes();
