@@ -15,7 +15,6 @@ import com.example.readocs_1.R;
 import org.apache.poi.xwpf.extractor.XWPFWordExtractor;
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
@@ -89,18 +88,19 @@ public class DocxActivity extends AppCompatActivity {
     private void displayTxtDoc(){
         textViewTxt.setTextSize((float)currentTextSize); //Изменение размера шрифта
 
-        File file = new File(path);
-        try (FileInputStream fileInput = new FileInputStream(file)) {
-            XWPFDocument targetDoc = new XWPFDocument(fileInput);
+        try (FileInputStream fileInput = new FileInputStream(path)) {
+            XWPFDocument targetFile = new XWPFDocument(fileInput);
             //Создание объекта конструктора для извлечения текста из документа word
-            XWPFWordExtractor wordExtractor = new XWPFWordExtractor(targetDoc);
+            XWPFWordExtractor wordExtractor = new XWPFWordExtractor(targetFile);
             String textOut = wordExtractor.getText();
             //Вывод текста документа
             textViewTxt.setText(textOut);
-        } catch (IOException exception) {
+        } catch (IOException excevption) {
             Toast.makeText(this, "Документ защищен паролем.", Toast.LENGTH_SHORT).show();
             finish();
         }
+
+
     }
 
     //Возвращение к главному окну

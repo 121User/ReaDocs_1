@@ -14,6 +14,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.readocs_1.databaseUtils.DatabaseUtilsFragment;
+import com.example.readocs_1.documentView.DocxActivity;
 import com.example.readocs_1.documentView.PdfActivity;
 import com.example.readocs_1.documentView.TxtActivity;
 import com.example.readocs_1.ui.dialog.EditDocumentDialog;
@@ -102,13 +103,17 @@ public class TemplateDocumentFragment extends DatabaseUtilsFragment {
         lvDocuments.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent;
-                //Открытие активности для PDF-файла
+                //Открытие активности для PDF-файлов
                 if (listDocuments.get(i).getDocFormat().equals("PDF")) {
                     intent = new Intent(view.getContext(), PdfActivity.class);
                 }
-                //Открытие активности для TXT, DOC или DOCX файла
-                else{
+                //Открытие активности для TXT-файлов
+                else if (listDocuments.get(i).getDocFormat().equals("TXT")) {
                     intent = new Intent(view.getContext(), TxtActivity.class);
+                }
+                //Открытие активности для  DOC или DOCX файлов
+                else{
+                    intent = new Intent(view.getContext(), DocxActivity.class);
                 }
                 intent.putExtra("fileName", listDocuments.get(i).getDocName());
                 intent.putExtra("filePath", listDocuments.get(i).getDocPath());
