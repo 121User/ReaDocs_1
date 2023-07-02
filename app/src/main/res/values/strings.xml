@@ -40,7 +40,7 @@
     <string name="dropdown_area_filter">Фильтр:</string>
     <string name="dropdown_area_filter_txt">TXT</string>
     <string name="dropdown_area_filter_pdf">PDF</string>
-    <string name="dropdown_area_filter_doc_or_docx">DOC</string>
+    <string name="dropdown_area_filter_doc_or_docx">DOCX</string>
 
 
     <string name="help_documents">Документы</string>
